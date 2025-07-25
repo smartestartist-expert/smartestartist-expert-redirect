@@ -2,88 +2,117 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Smartest Artist | Home</title>
-  <link rel="stylesheet" href="https://css.smartestartist.expert/core.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smartest Artist</title>
   <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
     body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, sans-serif;
-      background: linear-gradient(to bottom, #0b0b0b, #1a1a1a);
-      color: #fff;
+      margin: 0; 
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #eee;
       display: flex;
       flex-direction: column;
-      align-items: center;
       min-height: 100vh;
       text-align: center;
+      padding: 1rem;
     }
-
     header {
-      margin-top: 3rem;
+      padding: 2rem 1rem 1rem;
     }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.3em;
-      background: linear-gradient(to right, gold, violet, deepskyblue);
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      font-weight: 900;
+      background: linear-gradient(90deg, gold, violet, deepskyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      user-select: none;
     }
-
-    p {
-      max-width: 640px;
-      margin: 0 auto 2em;
-      font-size: 1.15rem;
-      opacity: 0.9;
+    header p {
+      margin: 0.5rem 0 0 0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      opacity: 0.75;
     }
-
-    .links {
+    nav {
+      margin: 2rem 0 3rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
-      margin-bottom: 4rem;
     }
-
-    .links a {
-      text-decoration: none;
-      color: #fff;
-      border: 1px solid #444;
-      padding: 0.6rem 1.2rem;
+    nav a {
+      padding: 0.75rem 1.25rem;
+      background: #222;
+      border: 1.5px solid #555;
       border-radius: 8px;
-      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+      color: #eee;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+      user-select: none;
+      min-width: 130px;
     }
-
-    .links a:hover {
-      background: #fff;
-      color: #000;
+    nav a:hover,
+    nav a:focus-visible {
+      background: #eee;
+      color: #111;
+      border-color: #888;
+      outline: none;
+      cursor: pointer;
     }
-
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #bbb;
+      user-select: none;
+    }
     footer {
-      margin-top: auto;
       font-size: 0.8rem;
-      opacity: 0.4;
-      padding: 1rem;
+      color: #555;
+      padding-bottom: 1rem;
+      user-select: none;
+    }
+    @media (max-width: 480px) {
+      nav a {
+        min-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>smartest::artist("expert")</h1>
-    <p>
-      A collective space for coders, creatives, students, and builders.<br>
-      Learn, share, and sell your work. We empower digital self-expression.
-    </p>
+    <h1>Smartest Artist</h1>
+    <p>Innovate. Create. Share. Learn.</p>
   </header>
 
-  <div class="links">
-    <a href="https://student.smartestartist.expert">Student Portal</a>
-    <a href="https://shop.smartestartist.expert">Theme & Style Shop</a>
-    <a href="https://playstore.smartestartist.expert">Playstore</a>
-    <a href="https://github.com/smartestartist-expert">GitHub</a>
+  <nav aria-label="Main site navigation">
+    <a href="https://user.smartestartist.expert" target="_blank" rel="noopener">My Account</a>
+    <a href="https://playstore.smartestartist.expert" target="_blank" rel="noopener">Playstore</a>
+    <a href="https://shop.smartestartist.expert" target="_blank" rel="noopener">Shop</a>
+    <a href="https://student.smartestartist.expert" target="_blank" rel="noopener">Student Portal</a>
+    <a href="https://bookings.smartestartist.expert" target="_blank" rel="noopener">Bookings</a>
+    <a href="https://css.smartestartist.expert" target="_blank" rel="noopener">CSS Repo</a>
+    <a href="https://docs.smartestartist.expert" target="_blank" rel="noopener">API Docs</a>
     <a href="mailto:info@smartestartist.expert">Contact</a>
-  </div>
+  </nav>
+
+  <main>
+    <p>
+      Welcome to Smartest Artist — your all-in-one hub for creativity, learning, and innovation.<br>
+      Explore games, tutorials, styles, and tools designed to inspire and empower artists and developers alike.<br><br>
+      Keep an eye out for new releases and exciting updates!
+    </p>
+  </main>
 
   <footer>
     &copy; 2025 Smartest Artist. All rights reserved.
