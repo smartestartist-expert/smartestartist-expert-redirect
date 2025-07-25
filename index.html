@@ -3,87 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>smartest::artist("expert")</title>
+  <title>Smartest Artist | Home</title>
+  <link rel="stylesheet" href="https://css.smartestartist.expert/core.css">
   <style>
     body {
       margin: 0;
-      padding: 1em;
-      font-family: "Courier New", Courier, monospace;
-      background: radial-gradient(circle at center, #111 0%, #000 100%);
-      color: #00ffcc;
+      padding: 0;
+      font-family: system-ui, sans-serif;
+      background: linear-gradient(to bottom, #0b0b0b, #1a1a1a);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
-      box-sizing: border-box;
       text-align: center;
     }
 
+    header {
+      margin-top: 3rem;
+    }
+
     h1 {
-      font-size: clamp(1.5rem, 5vw, 2.5rem);
-      margin-bottom: 1em;
-      background: linear-gradient(to right, #00ffcc, #66ccff, violet);
+      font-size: 3rem;
+      margin-bottom: 0.3em;
+      background: linear-gradient(to right, gold, violet, deepskyblue);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-weight: bold;
-      max-width: 90vw;
-      word-break: break-word;
     }
 
     p {
-      font-size: 1.1rem;
-      color: #ccc;
-      max-width: 600px;
-      margin-bottom: 2em;
-      opacity: 0.85;
+      max-width: 640px;
+      margin: 0 auto 2em;
+      font-size: 1.15rem;
+      opacity: 0.9;
     }
 
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 1em;
+      gap: 1rem;
+      margin-bottom: 4rem;
     }
 
     .links a {
-      color: #0ff;
-      border: 1px solid #0ff;
-      padding: 0.5em 1em;
-      border-radius: 6px;
       text-decoration: none;
-      transition: 0.3s ease;
+      color: #fff;
+      border: 1px solid #444;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      transition: all 0.2s ease-in-out;
     }
 
     .links a:hover {
-      background: #0ff;
+      background: #fff;
       color: #000;
-      box-shadow: 0 0 8px #0ff;
     }
 
     footer {
       margin-top: auto;
       font-size: 0.8rem;
-      color: #666;
-      opacity: 0.5;
-      padding: 2em 1em 1em;
+      opacity: 0.4;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
-  <h1>smartest::artist("expert")</h1>
-  <p>
-    Welcome to the hub of experimental ideas, retro-inspired creativity, and creative coding.<br>
-    The smartest artist builds with code — and vibes.
-  </p>
+  <header>
+    <h1>smartest::artist("expert")</h1>
+    <p>
+      A collective space for coders, creatives, students, and builders.<br>
+      Learn, share, and sell your work. We empower digital self-expression.
+    </p>
+  </header>
 
   <div class="links">
+    <a href="https://student.smartestartist.expert">Student Portal</a>
+    <a href="https://shop.smartestartist.expert">Theme & Style Shop</a>
     <a href="https://playstore.smartestartist.expert">Playstore</a>
     <a href="https://github.com/smartestartist-expert">GitHub</a>
     <a href="mailto:info@smartestartist.expert">Contact</a>
   </div>
 
   <footer>
-    &copy; 2025 smartest::artist("expert") — Code is art.
+    &copy; 2025 Smartest Artist. All rights reserved.
   </footer>
 </body>
 </html>
